@@ -3,8 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Input } from '@/components/ui/input';
 import { type BreadcrumbItem } from '@/types';
-import { Head, Link, useForm } from '@inertiajs/react';
-import { Console } from 'console';
+import { Head, useForm } from '@inertiajs/react';
+
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -15,7 +15,7 @@ const breadcrumbs: BreadcrumbItem[] = [
 
 export default function Index() {
 
-    const { data, setData, errors, post, processing } = useForm({
+    const { data, setData, errors, post } = useForm({
       name: '',
       price: '',
       description: '',
